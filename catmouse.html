@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>
+      Cat And Mouse Game
+    </title>
+  </head>
+  <body>
+
+    <script src="catmouse.js"></script><br>
+    <button id="startstopButton" onclick="startstop()">Pause</button>
+    <br><br>
+
+    <div id="score">
+      Hello
+    </div>
+
+    <script>
+      function startstop () {
+        var b = document.getElementById('startstopButton');
+        if (running) {
+          stop();
+          b.textContent = "Start";
+        }
+        else {
+          start();
+          b.textContent = "Pause";
+        }
+      };
+      startGame(startstop);
+    </script>
+
+
+    <script>
+    displayHS();
+    </script>
+
+  </body>
+</html>
